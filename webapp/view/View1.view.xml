@@ -1,0 +1,30 @@
+<mvc:View controllerName="formassignment.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:layout="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <layout:SimpleForm >
+                <Label text="Name"/>
+                <Input placeholder="Enter Here" id="sName" width="50%" required="true"/>
+                <Label text="Phone Number"/>
+                <Input placeholder="Enter Here" id="sPhone" type="Number" required="true" description="Phone number accept number only"/>
+                <Label text="Department"/>
+                <RadioButtonGroup columns="2" >
+                    <RadioButton text="Science"></RadioButton>
+                    <RadioButton text="Commerce"></RadioButton>
+                </RadioButtonGroup>
+                <Label text="Date of birth"/>
+                <DatePicker width="50%" id="sDate" required="true"></DatePicker>
+            </layout:SimpleForm>
+            
+        </content>
+        <footer>
+            <Bar design="Footer">
+                <contentRight >
+                    <Button text="Submit" type="Accept" press="onSubmit" width="100px"/>
+                </contentRight>
+                
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
